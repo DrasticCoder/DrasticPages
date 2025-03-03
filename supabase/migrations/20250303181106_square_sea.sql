@@ -66,3 +66,17 @@ CREATE POLICY "Allow anon inserts on pages"
   ON pages
   FOR INSERT
   USING (true);
+
+
+-- allow access to anon
+CREATE POLICY "Allow anon UPDATES on pages"
+  ON pages
+  FOR UPDATE
+  USING (true);
+
+
+-- allow access to anon
+CREATE POLICY "Allow anon DELETE on pages"
+  ON pages
+  FOR DELETE
+  USING (true);
